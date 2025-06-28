@@ -7,5 +7,5 @@ services:
     # This section adds the redirect rule
     redirects:
       - source: "/*"
-        destination: "https://daveenci.ai/:splat"
+        destination: "https://daveenci.ai"
         statusCode: 301
