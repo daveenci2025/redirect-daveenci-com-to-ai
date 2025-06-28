@@ -1,0 +1,11 @@
+# This file tells Render to act as a permanent redirector
+# for any traffic it receives.
+
+services:
+  - type: static
+    name: redirect-service
+    # This section adds the redirect rule
+    redirects:
+      - source: "/*"
+        destination: "https://daveenci.ai/:splat"
+        statusCode: 301
